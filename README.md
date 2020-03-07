@@ -2,7 +2,7 @@
 Udacity Project 4 to operationalise a Machine Learning Microservice API.
 
 
-<include a CircleCI status badge, here>
+[![CircleCI](https://circleci.com/gh/steeloctopus/udacity-dev-ops-project-four.svg?style=svg)](https://circleci.com/gh/steeloctopus/udacity-dev-ops-project-four)
 
 ## Project Overview
 
