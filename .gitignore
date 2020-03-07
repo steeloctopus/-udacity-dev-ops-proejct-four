@@ -129,5 +129,5 @@ dmypy.json
 .pyre/
 
 # PHPStorm
-.idea
+.idea/
 .DS_Store
