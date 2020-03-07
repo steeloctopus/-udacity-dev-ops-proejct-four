@@ -29,7 +29,7 @@ jobs:
             - ~/.devops
           key: v1-dependencies-{{ checksum "requirements.txt" }}
       - run: # run lint!
-        name: run lint
-        command: |
-          . ~/.devops/bin/activate
-          make lint
+          name: run lint
+          command: |
+            . ~/.devops/bin/activate
+            make lint
