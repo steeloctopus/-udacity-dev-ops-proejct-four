@@ -1,1 +1,21 @@
-<paste log output from Kubernetes-mediated prediction, here>
+dmilburn@Dominics-MacBook-Pro 04 Project Four % ./run_kubernetes.sh                                    
+deployment.apps/udacity-project-4 created
+NAMESPACE     NAME                                 READY   STATUS              RESTARTS   AGE
+default       udacity-project-4-548d5c476b-wms9h   0/1     ContainerCreating   0          0s
+kube-system   coredns-6955765f44-52c5n             1/1     Running             0          59m
+kube-system   coredns-6955765f44-kpbgx             1/1     Running             0          59m
+kube-system   etcd-minikube                        1/1     Running             0          59m
+kube-system   kube-apiserver-minikube              1/1     Running             0          59m
+kube-system   kube-controller-manager-minikube     1/1     Running             0          59m
+kube-system   kube-proxy-mjh62                     1/1     Running             0          59m
+kube-system   kube-scheduler-minikube              1/1     Running             0          59m
+kube-system   storage-provisioner                  1/1     Running             0          59m
+service/udacity-project-4 exposed
+error: unable to forward port because pod is not running. Current status=Pending
+dmilburn@Dominics-MacBook-Pro 04 Project Four % kubectl get pod
+NAME                                 READY   STATUS    RESTARTS   AGE
+udacity-project-4-548d5c476b-wms9h   1/1     Running   0          34s
+dmilburn@Dominics-MacBook-Pro 04 Project Four % kubectl port-forward deployment/udacity-project-4 8000:80
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+Handling connection for 8000
